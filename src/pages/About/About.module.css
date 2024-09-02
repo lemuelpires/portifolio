@@ -1,0 +1,18 @@
+.aboutContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutContainer h2 {
+    margin-top: 20px;
+}
+
+.aboutContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aboutContainer li {
+    margin-bottom: 10px;
+}

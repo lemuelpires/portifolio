@@ -1,0 +1,30 @@
+.header {
+    display: flex;  
+    justify-content: space-around ;
+    width: 100%;
+    align-items: center;
+    background-color: #0e64b9; /* Cor de fundo */
+}
+
+.headerTitle h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.headerNav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.headerNav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.headerNav a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}

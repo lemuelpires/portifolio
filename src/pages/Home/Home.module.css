@@ -1,0 +1,18 @@
+.homeContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.projectsPreview {
+    margin-bottom: 20px;
+}
