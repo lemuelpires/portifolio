@@ -1,26 +1,62 @@
 import React from 'react';
-import style from './Home.module.css'; // Supondo que você use CSS modules
+import style from './Home.module.css'; // CSS module específico para Home
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaMobile, FaDatabase, FaGithub, FaFigma, FaServer } from 'react-icons/fa'; // Usar FaMobile para Flutter
 
 function Home() {
     return (
         <div className={style.homeContainer}>
             <section className={style.hero}>
-                <h1>Bem-vindo ao Meu Portfólio</h1>
-                <p>Desenvolvedor de Software especializado em soluções tecnológicas modernas.</p>
+                <div className={style.heroContent}>
+                    <h1>Bem-vindo ao Meu Portfólio</h1>
+                    <p>Desenvolvedor de Software especializado em soluções tecnológicas modernas.</p>
+                    <a href="/projetos" className={style.ctaButton}>Ver Projetos</a>
+                </div>
             </section>
             <section className={style.skills}>
                 <h2>Minhas Habilidades</h2>
-                <ul>
-                    <li>Desenvolvimento Frontend: HTML, CSS, JavaScript, React, Flutter</li>
-                    <li>Desenvolvimento Backend: C#, .Net, CRUD, Arquitetura em Camadas</li>
-                    <li>Bancos de Dados: SQL (MySQL), NoSQL (Firebase, MongoDB)</li>
-                    <li>Versionamento e CI/CD: GitHub, Firebase, Azure</li>
-                    <li>Prototipação e Design: Figma</li>
-                </ul>
+                <div className={style.skillsList}>
+                    <div className={style.skillItem}>
+                        <FaHtml5 className={style.skillIcon} />
+                        <span>HTML</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaCss3Alt className={style.skillIcon} />
+                        <span>CSS</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaJs className={style.skillIcon} />
+                        <span>JavaScript</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaReact className={style.skillIcon} />
+                        <span>React</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaMobile className={style.skillIcon} />
+                        <span>Flutter</span> {/* Usar FaMobile como ícone de Flutter */}
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaServer className={style.skillIcon} />
+                        <span>.NET & Backend</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaDatabase className={style.skillIcon} />
+                        <span>Bancos de Dados</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaGithub className={style.skillIcon} />
+                        <span>Versionamento</span>
+                    </div>
+                    <div className={style.skillItem}>
+                        <FaFigma className={style.skillIcon} />
+                        <span>Prototipação</span>
+                    </div>
+                </div>
             </section>
             <section className={style.projectsPreview}>
                 <h2>Projetos em Destaque</h2>
-                <p>Confira alguns dos meus projetos mais recentes na seção de Projetos.</p>
+                <p>Confira alguns dos meus projetos mais recentes.</p>
+                <a href="#projects" className={style.ctaButton}>Ver Todos os Projetos</a>
             </section>
         </div>
     );

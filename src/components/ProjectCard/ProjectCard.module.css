@@ -1,0 +1,86 @@
+/* Card.module.css */
+.card {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cardTitle {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.cardImages {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.cardImage {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardImage:hover {
+    transform: scale(1.05);
+}
+
+.cardLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cardLink:hover {
+    color: #0056b3;
+}
+
+.cardTechnologies {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.techIcon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.techIcon:hover {
+    color: #007bff;
+}

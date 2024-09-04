@@ -1,23 +1,38 @@
 import React from 'react';
-import style from './Projects.module.css'; // Supondo que você use CSS modules
+import style from './Projects.module.css'; // CSS module para a página de projetos
+import Card from '../../components/ProjectCard/ProjectCard'; // Importa o componente de Card
 
 function Projetos() {
+    const projects = [
+        {
+            title: "Sigma Hardware - E-commerce",
+            description: "Desenvolvimento completo de um site de e-commerce focado em produtos de hardware.",
+            images: [
+                "url-da-imagem-1", 
+                "url-da-imagem-2"
+            ],
+            links: [
+                { url: "https://github.com/lemuelpires", text: "Repositório GitHub" },
+                { url: "https://deploy-link.com", text: "Visualizar Projeto" }
+            ],
+            technologies: ["React", ".NET", "SQL", "JavaScript"]
+        },
+        // Adicione mais projetos aqui
+    ];
+
     return (
         <div className={style.projectsContainer}>
-            <h1>Meus Projetos</h1>
-            <div className={style.project}>
-                <h2>Sigma Hardware - E-commerce</h2>
-                <p>Desenvolvimento completo de um site de e-commerce focado em produtos de hardware.</p>
-                <ul>
-                    <li><strong>Frontend:</strong> Construído com React. <a href="https://github.com/lemuelpires" target="_blank" rel="noopener noreferrer">Repositório GitHub</a></li>
-                    <li><strong>Backend:</strong> Desenvolvido em C# com foco em arquitetura limpa.</li>
-                    <li><strong>Banco de Dados:</strong> Firebase/Firestore e MySQL.</li>
-                    <li><strong>Integração Contínua:</strong> Configuração de pipelines no GitHub.</li>
-                    <li><strong>Prototipação:</strong> Layout de alta fidelidade desenvolvido no Figma.</li>
-                    <li><strong>Hospedagem:</strong> Código-fonte hospedado no GitHub e Azure.</li>
-                </ul>
-            </div>
-            {/* Adicione mais projetos aqui, se necessário */}
+            <h1 className={style.title}>Meus Projetos</h1>
+            {projects.map((project, index) => (
+                <Card 
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    images={project.images}
+                    links={project.links}
+                    technologies={project.technologies}
+                />
+            ))}
         </div>
     );
 }

@@ -3,10 +3,10 @@ import style from './Header.module.css';  // Importação correta para o CSS Mod
 
 function Header() {
     return (
-        <>
-            <div className={style.header}>
-                <div className={style.headerTitle}>
-                    <h1>Meu Portifólio</h1>
+        <header className={style.header}>
+            <div className={style.headerContainer}>
+                <div className={style.logo}>
+                    <h1>Meu Portfólio</h1>
                 </div>
                 <nav className={style.headerNav}>
                     <ul>
@@ -17,7 +17,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
-        </>
+        </header>
     );
 }
 

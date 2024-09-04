@@ -1,18 +1,61 @@
 .aboutContainer {
-    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.introContent h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.introContent p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.aboutContainer h2 {
-    margin-top: 20px;
+.education,
+.certifications {
+    margin-bottom: 40px;
 }
 
-.aboutContainer ul {
-    list-style-type: none;
+.education h2,
+.certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-.aboutContainer li {
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 10px 0;
+    padding-left: 15px;
     margin-bottom: 10px;
+    color: #555;
+}
+
+ul li strong {
+    color: #000;
 }

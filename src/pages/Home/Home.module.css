@@ -1,18 +1,86 @@
+/* Home.module.css */
 .homeContainer {
-    padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
 .hero {
-    background-color: #f7f7f7;
-    padding: 40px 20px;
+    background: url('/path/to/your/background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    height: 400px;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.ctaButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #0056b3;
 }
 
 .skills {
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skillIcon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .projectsPreview {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projectsPreview h2 {
     margin-bottom: 20px;
+}
+
+.projectsPreview p {
+    margin-bottom: 30px;
 }

@@ -1,22 +1,17 @@
+/* Projects.module.css */
 .projectsContainer {
-    padding: 20px;
-    max-width: 800px;
+    padding: 40px;
+    max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.project {
-    margin-bottom: 20px;
-}
-
-.project h2 {
-    margin-top: 10px;
-}
-
-.project ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.project li {
-    margin-bottom: 5px;
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }

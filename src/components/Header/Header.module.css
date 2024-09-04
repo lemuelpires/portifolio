@@ -1,30 +1,66 @@
 .header {
-    display: flex;  
-    justify-content: space-around ;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
     width: 100%;
-    align-items: center;
-    background-color: #0e64b9; /* Cor de fundo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.headerTitle h1 {
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .headerNav ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+    margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.headerNav ul li {
     margin: 0;
 }
 
-.headerNav a {
+.headerNav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.headerNav a:hover {
-    color: #007bff; /* Cor ao passar o mouse */
+.headerNav ul li a:hover {
+    color: #f39c12; /* Cor de destaque no hover */
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerNav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .headerNav ul li {
+        margin: 10px 0;
+    }
 }
