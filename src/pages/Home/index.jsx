@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Home.module.css'; // CSS module específico para Home
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaMobile, FaDatabase, FaGithub, FaFigma, FaServer } from 'react-icons/fa'; // Usar FaMobile para Flutter
+import ImagemSigma from '../../assets/sigma/home2.png'
+import ImagemBlogDev from '../../assets/blogDev/homeBlogDev.png'
 
 function Home() {
     return (
@@ -56,7 +58,19 @@ function Home() {
             <section className={style.projectsPreview}>
                 <h2>Projetos em Destaque</h2>
                 <p>Confira alguns dos meus projetos mais recentes.</p>
-                <a href="#projects" className={style.ctaButton}>Ver Todos os Projetos</a>
+                <div className={style.catalogo}>
+                    <div className={style.catalogoItem}>
+                        <img src={ImagemSigma}  />
+                    </div>
+                    <div className={style.catalogoItem}>
+                        <img src={ImagemBlogDev} />
+                    </div>
+                    <div className={style.catalogoItem}>
+                        <img src={ImagemSigma} />
+                    </div>
+                </div>
+
+                <a href="/projetos" className={style.ctaButton}>Ver Todos os Projetos</a>
             </section>
         </div>
     );

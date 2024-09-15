@@ -1,6 +1,6 @@
 .header {
-    background-color: #333;
-    color: #fff;
+    background-color: #222; /* Cor de fundo do header */
+    color: #f5f5f5; /* Cor do texto */
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -22,6 +22,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
+    color: #d9d9d9; /* Cor do logo */
+    border-color: #66b3ff;
 }
 
 .headerNav ul {
@@ -37,7 +39,7 @@
 }
 
 .headerNav ul li a {
-    color: #fff;
+    color: #f5f5f5; /* Cor dos links */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -45,7 +47,7 @@
 }
 
 .headerNav ul li a:hover {
-    color: #f39c12; /* Cor de destaque no hover */
+    color: #66b3ff; /* Cor de destaque no hover */
 }
 
 @media (max-width: 768px) {

@@ -1,12 +1,12 @@
 import React from "react";
-import style from './Header.module.css';  // Importação correta para o CSS Module
+import style from './Header.module.css'; // Importação correta para o CSS Module
 
 function Header() {
     return (
         <header className={style.header}>
             <div className={style.headerContainer}>
                 <div className={style.logo}>
-                    <h1>Meu Portfólio</h1>
+                    <h1>Lemuel Pires da Silva</h1> {/* Seu nome ou marca */}
                 </div>
                 <nav className={style.headerNav}>
                     <ul>

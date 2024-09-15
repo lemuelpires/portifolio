@@ -1,28 +1,52 @@
 .footer {
-    background-color: #333; /* Cor de fundo do footer */
-    color: #fff; /* Cor do texto */
-    padding: 20px 0;
+    background-color: #222; /* Cor de fundo do footer */
+    color: #f5f5f5; /* Cor do texto */
+    padding: 1.25em 0; /* Padding ajustado para unidades em */
     text-align: center;
 }
 
 .footerContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* Centraliza os blocos */
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 75em; /* Largura máxima ajustada para unidades em */
     margin: 0 auto;
 }
 
 .footerSection {
     flex: 1;
-    margin: 10px;
-    min-width: 200px;
+    margin: 0.625em; /* Margem ajustada para unidades em */
+    min-width: 12.5em; /* Largura mínima ajustada para unidades em */
+    max-width: 20em; /* Define uma largura máxima para evitar expansão excessiva */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
 .footerSection h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 0.625em; /* Margem inferior ajustada para unidades em */
+    font-size: 1.125em; /* Reduzido para 1.125em (18px aproximadamente) */
+    font-weight: bold;
+    color: #007bff; /* Cor do título das seções */
+}
+
+.footerSection p,
+.footerSection li {
+    display: flex;
+    align-items: center;
+    gap: 0.625em; /* Espaço entre o ícone e o texto ajustado para unidades em */
+    margin: 0.3125em 0; /* Margem ajustada para unidades em */
+    font-size: 0.875em; /* Reduzido para 0.875em (14px aproximadamente) */
+}
+
+.footerSection a {
+    color: #ddd; /* Cor padrão dos links */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footerSection a:hover {
+    color: #66b3ff; /* Cor ao passar o mouse */
+    text-decoration: underline;
 }
 
 .socialLinks {
@@ -32,15 +56,59 @@
 }
 
 .socialLinks li {
-    margin: 5px 0;
+    margin: 0.5em 0; /* Margem ajustada para unidades em */
 }
 
 .socialLinks a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ddd; /* Cor dos links de redes sociais */
+    font-size: 1em; /* Reduzido para 1em (16px aproximadamente) */
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* Espaço entre ícone e texto ajustado para unidades em */
 }
 
 .socialLinks a:hover {
-    color: #007bff; /* Cor ao passar o mouse */
+    color: #00bcd4; /* Cor ao passar o mouse */
 }
+
+/* Estilos para ícones */
+.footerSection svg {
+    color: #f5f5f5; /* Cor dos ícones */
+    font-size: 1em; /* Reduzido para 1em (16px aproximadamente) */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1em 0; /* Padding ajustado para telas menores */
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+    }
+
+    .footerSection {
+        margin: 0.5em 0; /* Ajusta a margem para uma coluna única */
+        max-width: none; /* Remove a largura máxima */
+        width: 100%; /* Faz com que cada seção ocupe toda a largura disponível */
+    }
+
+    .footerSection h4 {
+        font-size: 1em; /* Reduz o tamanho da fonte do título */
+    }
+
+    .footerSection p,
+    .footerSection li {
+        font-size: 0.75em; /* Reduz o tamanho da fonte do texto */
+    }
+
+    .socialLinks a {
+        font-size: 0.875em; /* Ajusta o tamanho da fonte dos links de redes sociais */
+    }
+
+    .footerSection svg {
+        font-size: 0.875em; /* Ajusta o tamanho dos ícones */
+    }
+}
+

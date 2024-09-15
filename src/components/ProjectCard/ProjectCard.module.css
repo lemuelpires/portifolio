@@ -84,3 +84,16 @@
 .techIcon:hover {
     color: #007bff;
 }
+
+.cardImages {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardImage {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    object-fit: cover;
+}

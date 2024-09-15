@@ -1,9 +1,9 @@
 .aboutContainer {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 70px;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #ffffff; /* Cor de fundo da seção */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -15,13 +15,13 @@
 
 .introContent h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #333; /* Cor do título principal */
     margin-bottom: 20px;
 }
 
 .introContent p {
     font-size: 1.2rem;
-    color: #666;
+    color: #555; /* Cor do texto para maior legibilidade */
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -36,8 +36,8 @@
 .certifications h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #444;
-    border-bottom: 2px solid #f39c12;
+    color: #333; /* Cor dos subtítulos */
+    border-bottom: 2px solid #e0e0e0; /* Linha de destaque neutra */
     display: inline-block;
     padding-bottom: 10px;
 }
@@ -53,9 +53,9 @@ ul li {
     padding: 10px 0;
     padding-left: 15px;
     margin-bottom: 10px;
-    color: #555;
+    color: #555; /* Cor do texto dos itens da lista para melhor leitura */
 }
 
 ul li strong {
-    color: #000;
+    color: #007bff; /* Cor dos itens em negrito */
 }

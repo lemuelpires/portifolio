@@ -1,4 +1,3 @@
-/* Projects.module.css */
 .projectsContainer {
     padding: 40px;
     max-width: 1200px;
@@ -6,12 +5,73 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .title {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #333;
+    color: #343a40; /* Cinza escuro para o título */
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.projectCard {
+    background-color: #ffffff; /* Fundo branco para destacar o conteúdo dos cards */
+    border: 1px solid #ced4da; /* Borda cinza claro para os cards */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada para destaque */
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.projectImages {
+    display: flex;
+    overflow-x: auto; /* Permite rolar imagens horizontalmente */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.projectImages img {
+    width: 100%;
+    max-width: 240px; /* Largura máxima ajustada para imagens */
+    height: auto;
+    border-radius: 10px; /* Borda arredondada das imagens */
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.projectLinks a {
+    color: #007bff; /* Azul marinho para links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.projectLinks a:hover {
+    color: #0056b3; /* Azul marinho mais escuro para o hover */
+    text-decoration: underline;
+}
+
+.projectTechnologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.technologyTag {
+    background-color: #fd7e14; /* Laranja para os tags de tecnologia */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600; /* Peso da fonte ajustado */
 }

@@ -1,6 +1,11 @@
 import React from 'react';
-import style from './Projects.module.css'; // CSS module para a página de projetos
-import Card from '../../components/ProjectCard/ProjectCard'; // Importa o componente de Card
+import style from './Projects.module.css';
+import Card from '../../components/ProjectCard/ProjectCard';
+import Home from '../../assets/sigma/home.png';
+import Home1 from '../../assets/sigma/home2.png';
+import HomeBlogDev from '../../assets/blogDev/homeBlogDev.png';
+import LoginBlogDev from '../../assets/blogDev/loginBlogDev.png';
+import RegistroBlogDev from'../../assets/blogDev/registroBlogDev.png';
 
 function Projetos() {
     const projects = [
@@ -8,14 +13,29 @@ function Projetos() {
             title: "Sigma Hardware - E-commerce",
             description: "Desenvolvimento completo de um site de e-commerce focado em produtos de hardware.",
             images: [
-                "url-da-imagem-1", 
-                "url-da-imagem-2"
+                Home, 
+                Home1
             ],
             links: [
-                { url: "https://github.com/lemuelpires", text: "Repositório GitHub" },
-                { url: "https://deploy-link.com", text: "Visualizar Projeto" }
+                { url: "https://github.com/lemuelpires/ProjetoSigma", text: " Ver GitHub FrontEnd" },
+                { url: "https://github.com/lemuelpires/SigmaBackEnd", text: "Ver GitHub BackEnd" },
+                { url: "https://projeto-frontsigma.web.app/", text: "Visualizar Projeto" }
             ],
-            technologies: ["React", ".NET", "SQL", "JavaScript"]
+            technologies: ["React", ".NET", "Microsoft SQL", "JavaScript", "Firestore", "Firebase"]
+        },
+        {
+            title: "BlogDev - Rede Social",
+            description: "Desenvolvimento de uma rede social, onde as pessoas podem publicar itens de seu interesse",
+            images: [
+                HomeBlogDev, 
+                LoginBlogDev,
+                RegistroBlogDev
+            ],
+            links: [
+                { url: "https://github.com/lemuelpires/blogDev_f3m_Lemuel", text: "Ver no GitHub" },
+                { url: "https://blogdev-lemuel.firebaseapp.com/", text: "Visualizar Projeto" }
+            ],
+            technologies: ["React", "Firebase"]
         },
         // Adicione mais projetos aqui
     ];
