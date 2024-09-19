@@ -65,9 +65,6 @@ function Home() {
                     <div className={style.catalogoItem}>
                         <img src={ImagemBlogDev} />
                     </div>
-                    <div className={style.catalogoItem}>
-                        <img src={ImagemSigma} />
-                    </div>
                 </div>
 
                 <a href="/projetos" className={style.ctaButton}>Ver Todos os Projetos</a>

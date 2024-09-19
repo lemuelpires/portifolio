@@ -139,10 +139,11 @@
 .catalogo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 2em 10em;
+    justify-content: center;
+    padding: 2em 2em;
     border-top: 2px solid rgba(0, 0, 0, 0.1);
     gap:1em;
+    flex-wrap: wrap;
 }
 
 .catalogoItem{
@@ -158,6 +159,9 @@
 
 /* Media Queries para dispositivos menores */
 @media (max-width: 768px) {
+    .hero{
+        height: 250px;
+    }
     .catalogo{
         display:flex;
         flex-wrap: wrap;
@@ -199,6 +203,9 @@
 }
 
 @media (max-width: 480px) {
+    .hero{
+        height: 200px;
+    }
     .hero h1 {
         font-size: 1.5rem;
     }
