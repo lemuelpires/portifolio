@@ -18,7 +18,7 @@ function Header() {
                 <nav className={`${style.headerNav} ${isOpen ? style.open : ''}`}>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/sobre"> Sobre</a></li>
                         <li><a href="/projetos">Projetos</a></li>
                         <li><a href="/contato">Contato</a></li>
                     </ul>
