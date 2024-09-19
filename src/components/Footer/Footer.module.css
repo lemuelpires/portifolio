@@ -78,37 +78,42 @@
 }
 
 /* Responsividade para dispositivos móveis */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .footer {
-        padding: 1em 0; /* Padding ajustado para telas menores */
+        padding: 1em 0;
     }
 
     .footerContainer {
         flex-direction: column;
-        align-items: center; /* Centraliza o conteúdo verticalmente */
+        align-items: center;
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        text-align: center; /* Centraliza o texto */
     }
 
     .footerSection {
-        margin: 0.5em 0; /* Ajusta a margem para uma coluna única */
-        max-width: none; /* Remove a largura máxima */
-        width: 100%; /* Faz com que cada seção ocupe toda a largura disponível */
+        margin: 0.5em 0;
+        max-width: none;
+        width: 100%;
+        text-align: center; /* Garante que o texto em cada seção esteja centralizado */
     }
 
     .footerSection h4 {
-        font-size: 1em; /* Reduz o tamanho da fonte do título */
+        font-size: 1em;
     }
 
     .footerSection p,
     .footerSection li {
-        font-size: 0.75em; /* Reduz o tamanho da fonte do texto */
+        font-size: 0.75em;
+        justify-content: center;
     }
 
     .socialLinks a {
-        font-size: 0.875em; /* Ajusta o tamanho da fonte dos links de redes sociais */
+        font-size: 0.875em;
     }
 
     .footerSection svg {
-        font-size: 0.875em; /* Ajusta o tamanho dos ícones */
+        font-size: 0.875em;
     }
 }
 

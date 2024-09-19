@@ -1,12 +1,8 @@
 .header {
     background-color: #222; /* Cor de fundo do header */
     color: #f5f5f5; /* Cor do texto */
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    padding: 17px 20px;
+    position: relative;
 }
 
 .headerContainer {
@@ -23,7 +19,6 @@
     font-weight: bold;
     letter-spacing: 1px;
     color: #d9d9d9; /* Cor do logo */
-    border-color: #66b3ff;
 }
 
 .headerNav ul {
@@ -32,10 +27,6 @@
     padding: 0;
     display: flex;
     gap: 20px;
-}
-
-.headerNav ul li {
-    margin: 0;
 }
 
 .headerNav ul li a {
@@ -50,19 +41,47 @@
     color: #66b3ff; /* Cor de destaque no hover */
 }
 
+.menuIcon {
+    display: none;
+    font-size: 2rem;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos menores */
 @media (max-width: 768px) {
+    .logo h1{
+        font-size: 1em;
+    }
     .headerContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerNav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #222;
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .headerNav.open {
+        display: flex;
     }
 
     .headerNav ul {
         flex-direction: column;
-        width: 100%;
-        padding: 0;
+        gap: 15px;
     }
 
-    .headerNav ul li {
-        margin: 10px 0;
+    .menuIcon {
+        display: block; /* Mostrar ícone de hambúrguer em dispositivos menores */
+        font-size: 1em;
     }
 }

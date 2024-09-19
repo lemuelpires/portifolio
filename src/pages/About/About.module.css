@@ -59,3 +59,74 @@ ul li {
 ul li strong {
     color: #007bff; /* Cor dos itens em negrito */
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .aboutContainer {
+        padding: 50px;
+    }
+
+    .introContent h1 {
+        font-size: 2rem;
+    }
+
+    .introContent p {
+        font-size: 1.1rem;
+    }
+
+    .education h2,
+    .certifications h2 {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 30px;
+    }
+
+    .introContent h1 {
+        font-size: 1.8rem;
+    }
+
+    .introContent p {
+        font-size: 1rem;
+        max-width: 100%; /* O texto ocupará toda a largura disponível */
+    }
+
+    .education h2,
+    .certifications h2 {
+        font-size: 1.6rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutContainer {
+        padding: 20px;
+    }
+
+    .introContent h1 {
+        font-size: 1.5rem;
+    }
+
+    .introContent p {
+        font-size: 0.9rem;
+    }
+
+    .education h2,
+    .certifications h2 {
+        font-size: 1.4rem;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+    }
+}

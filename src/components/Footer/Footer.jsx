@@ -32,7 +32,7 @@ function Footer() {
 
                 {/* Seção de Criação */}
                 <div className={style.footerSection}>
-                    <h4>Feito com ❤️ por Lemuel Pires da Silva</h4>
+                    <h4>Feito por Lemuel Pires da Silva</h4>
                     <p>&copy; {new Date().getFullYear()} Todos os direitos reservados.</p>
                 </div>
             </div>

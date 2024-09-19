@@ -97,3 +97,36 @@
     border-radius: 8px;
     object-fit: cover;
 }
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%; /* Ocupar 100% da largura da tela */
+    }
+
+    .cardTitle {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .cardDescription {
+        font-size: 0.9rem; /* Ajuste na fonte para descrições */
+    }
+
+    .cardImage {
+        max-width: 100%; /* Deixa a imagem ocupar toda a largura da tela */
+    }
+
+    .cardLinks {
+        flex-direction: column; /* Links ficam empilhados em vez de lado a lado */
+        gap: 10px; /* Reduz o espaçamento entre os links */
+    }
+
+    .cardTechnologies {
+        flex-wrap: wrap; /* Quebra os ícones em várias linhas se não houver espaço */
+        justify-content: space-around; /* Distribui os ícones de forma uniforme */
+    }
+
+    .techIcon {
+        font-size: 1.5rem; /* Reduz o tamanho dos ícones */
+    }
+}
+
