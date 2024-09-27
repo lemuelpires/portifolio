@@ -19,7 +19,10 @@ function Projetos() {
             links: [
                 { url: "https://github.com/lemuelpires/ProjetoSigma", text: " Ver GitHub FrontEnd" },
                 { url: "https://github.com/lemuelpires/SigmaBackEnd", text: "Ver GitHub BackEnd" },
-                { url: "https://projeto-frontsigma.web.app/", text: "Visualizar Projeto" }
+                /*{ url: "https://projeto-frontsigma.web.app/", text: "Visualizar Projeto" }*/
+                { url: "https://www.youtube.com/watch?v=nT0XL2W8fSc", text:" Youtube_BackEnd"},
+                { url: "https://www.youtube.com/watch?v=98rBqmbxvXg", text:" Youtube_Swagger"},
+                { url: "https://www.youtube.com/watch?v=ydV4jdNJdtA", text:" Youtube_FrontEnd"}
             ],
             technologies: ["React", ".NET", "Microsoft SQL", "JavaScript", "Firestore", "Firebase"]
         },
