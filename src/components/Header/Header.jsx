@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from './Header.module.css'; 
-import { FaBars, FaTimes } from 'react-icons/fa'; // Ícones para o menu hambúrguer
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Foto from '../../assets/foto/foto.jpg';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ function Header() {
         <header className={style.header}>
             <div className={style.headerContainer}>
                 <div className={style.logo}>
+                    <img src={Foto} alt="Logo" />
                     <h1>Lemuel Pires da Silva</h1>
                 </div>
                 <nav className={`${style.headerNav} ${isOpen ? style.open : ''}`}>

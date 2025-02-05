@@ -1,10 +1,14 @@
 import React from 'react';
 import style from './About.module.css'; // Importação do CSS Module
+import Foto from '../../assets/foto/foto.jpg';
 
 function Sobre() {
     return (
         <div className={style.aboutContainer}>
             <section className={style.intro}>
+                <div className={style.introImage}>
+                    <img src={Foto} alt="Foto" />
+                </div>
                 <div className={style.introContent}>
                     <h1>Sobre Mim</h1>
                     <p>Sou desenvolvedor de software com experiência em desenvolvimento frontend e backend, especializado na criação de soluções tecnológicas utilizando tecnologias modernas. Tenho experiência em projetos de e-commerce, desenvolvimento de APIs e integração contínua.</p>
