@@ -1,5 +1,5 @@
 .footer {
-    background-color: #222; /* Cor de fundo do footer */
+    background-color: #384278f2; /* Cor de fundo do footer */
     color: #f5f5f5; /* Cor do texto */
     padding: 1.25em 0; /* Padding ajustado para unidades em */
     text-align: center;
@@ -26,7 +26,7 @@
     margin-bottom: 0.625em; /* Margem inferior ajustada para unidades em */
     font-size: 1.125em; /* Reduzido para 1.125em (18px aproximadamente) */
     font-weight: bold;
-    color: #007bff; /* Cor do título das seções */
+    color: #f4f5f7; /* Cor do título das seções */
 }
 
 .footerSection p,
