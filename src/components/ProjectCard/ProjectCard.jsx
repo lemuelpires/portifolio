@@ -1,10 +1,15 @@
 import React from 'react';
-import style from './ProjectCard.module.css'; // CSS module específico para o Card
-import { FaReact, FaDatabase, FaJs, FaServer,} from 'react-icons/fa'; // Ícones
+import style from './ProjectCard.module.css';
+import { FaReact, FaDatabase, FaJs, FaServer, FaGithub } from 'react-icons/fa';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importar CSS do carrossel
-import { SiDotnet, SiFirebase, SiAzuredevops, SiMicrosoftsqlserver, SiGithub, SiGooglecloud } from 'react-icons/si'; // Ícones específicos
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {
+    SiDotnet,
+    SiFirebase,
+    SiAzuredevops,
+    SiMicrosoftsqlserver,
+    SiGooglecloud
+} from 'react-icons/si';
 
 function Card({ title, description, images, links, technologies }) {
     return (
@@ -15,10 +20,23 @@ function Card({ title, description, images, links, technologies }) {
             </div>
 
             <div className={style.cardImages}>
-                <Carousel showThumbs={false} infiniteLoop autoPlay>
+                <Carousel
+                    showThumbs={false}
+                    infiniteLoop
+                    autoPlay
+                    showStatus={false}
+                    showIndicators={true}
+                    showArrows={true}
+                    transitionTime={500}
+                    interval={4000}
+                >
                     {images.map((image, index) => (
                         <div key={index}>
-                            <img src={image} alt={`Imagem ${index + 1}`} className={style.cardImage} />
+                            <img
+                                src={image.src}
+                                alt={image.alt || `Imagem ${index + 1}`}
+                                className={style.cardImage}
+                            />
                         </div>
                     ))}
                 </Carousel>
@@ -26,7 +44,13 @@ function Card({ title, description, images, links, technologies }) {
 
             <div className={style.cardLinks}>
                 {links.map((link, index) => (
-                    <a href={link.url} key={index} target="_blank" rel="noopener noreferrer" className={style.cardLink}>
+                    <a
+                        href={link.url}
+                        key={index}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={style.cardLink}
+                    >
                         {link.text}
                     </a>
                 ))}
