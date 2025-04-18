@@ -11,10 +11,10 @@ function Projetos() {
     const projects = [
         {
             title: "Sigma Hardware - E-commerce",
-            description: "Desenvolvimento completo de um site de e-commerce focado em produtos de hardware.",
+            description: "Desenvolvimento parcial de um site de e-commerce focado em produtos de hardware, feito em React e .NET, com integração ao Firestore para gerenciamento de dados.",
             images: [
-                Home, 
-                Home1
+                { src: Home, alt: "Home" },
+                { src: Home1, alt: "Home1" }
             ],
             links: [
                 { url: "https://github.com/lemuelpires/ProjetoSigma", text: " Ver GitHub FrontEnd" },
@@ -30,9 +30,9 @@ function Projetos() {
             title: "BlogDev - Rede Social",
             description: "Desenvolvimento de uma rede social, onde as pessoas podem publicar itens de seu interesse",
             images: [
-                HomeBlogDev, 
-                LoginBlogDev,
-                RegistroBlogDev
+                { src: HomeBlogDev, alt: "HomeBlogDev" },
+                { src: LoginBlogDev, alt: "LoginBlogDev" },
+                { src: RegistroBlogDev, alt: "RegistroBlogDev" }
             ],
             links: [
                 { url: "https://github.com/lemuelpires/blogDev_f3m_Lemuel", text: "Ver no GitHub" },
