@@ -6,7 +6,6 @@
     background-color: #f4f4f9; /* Cor de fundo da seção */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
 }
 
 .contactForm {
@@ -24,6 +23,7 @@
     font-size: 1em;
     background-color: #fff; /* Cor de fundo dos campos de entrada */
     width: 100%; /* Garantir que os campos ocupem a largura total do formulário */
+    color: #333; /* Cor do texto */
 }
 
 .contactForm textarea {
@@ -34,7 +34,7 @@
 .contactForm button {
     padding: 12px;
     background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff;
+    color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;

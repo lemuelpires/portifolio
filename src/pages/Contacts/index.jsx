@@ -17,7 +17,7 @@ function Contato() {
             message: mensagem,
         };
 
-        emailjs.send('service_7sv5ngl', 'template_93abqwn', templateParams, 'l7QT0b7upBgvnUgv1')
+        emailjs.send('service_xgmh4ys', 'template_93abqwn', templateParams, 'l7QT0b7upBgvnUgv1')
             .then((response) => {
                 console.log('Success:', response);
                 alert('Mensagem enviada com sucesso!');
