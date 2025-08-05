@@ -17,7 +17,7 @@ function Sobre() {
 
             <section className={style.education}>
                 <h2>Formação Acadêmica</h2>
-                <ul>
+                <ul className={style.educationList}>
                     <li><strong>Graduação em Desenvolvimento de Software Multiplataforma</strong> - Faculdade de Tecnologia de Matão – FATEC (2022 – 2025)</li>
                     <li><strong>Pós-Graduação em Gestão da Produção</strong> - Faculdade de Tecnologia de Taquaritinga – FATEC (2013 – 2015)</li>
                     <li><strong>Graduação em Produção</strong> - Faculdade de Tecnologia de Taquaritinga – FATEC (2008 – 2010)</li>
@@ -26,7 +26,7 @@ function Sobre() {
 
             <section className={style.certifications}>
                 <h2>Certificações</h2>
-                <ul>
+                <ul className={style.educationList}>
                     <li>Fundamentos do Design da Experiência do Usuário (UX) - Google | Coursera (Mar 2024)</li>
                 </ul>
             </section>

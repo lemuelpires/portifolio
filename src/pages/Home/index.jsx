@@ -10,10 +10,11 @@ function Home() {
             <section className={style.hero}>
                 <div className={style.heroContent}>
                     <h1>Bem-vindo ao Meu Portfólio</h1>
-                    <p>Desenvolvedor de Software especializado em soluções tecnológicas modernas.</p>
-                    <a href="/projetos" className={style.ctaButton}>Ver Projetos</a>
+                    <p>Desenvolvedor de Software especializado em soluções tecnológicas modernas e inovadoras.</p>
+                    <a href="https://www.portalmantec.com.br" target="_blank" rel="noopener noreferrer" className={style.ctaButton}>Ver Projetos</a>
                 </div>
             </section>
+            
             <section className={style.skills}>
                 <h2>Minhas Habilidades</h2>
                 <div className={style.skillsList}>
@@ -35,7 +36,7 @@ function Home() {
                     </div>
                     <div className={style.skillItem}>
                         <FaMobile className={style.skillIcon} />
-                        <span>Flutter</span> {/* Usar FaMobile como ícone de Flutter */}
+                        <span>Flutter</span>
                     </div>
                     <div className={style.skillItem}>
                         <FaServer className={style.skillIcon} />
@@ -54,20 +55,6 @@ function Home() {
                         <span>Prototipação</span>
                     </div>
                 </div>
-            </section>
-            <section className={style.projectsPreview}>
-                <h2>Projetos em Destaque</h2>
-                <p>Confira alguns dos meus projetos mais recentes.</p>
-                <div className={style.catalogo}>
-                    <div className={style.catalogoItem}>
-                        <img src={ImagemSigma}  />
-                    </div>
-                    <div className={style.catalogoItem}>
-                        <img src={ImagemBlogDev} />
-                    </div>
-                </div>
-
-                <a href="/projetos" className={style.ctaButton}>Ver Todos os Projetos</a>
             </section>
         </div>
     );

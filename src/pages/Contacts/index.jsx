@@ -62,17 +62,17 @@ function Contato() {
                 <div>
                     <p><FaEnvelope /> Email: <a href="mailto:lemuelpires@gmail.com">lemuelpires@gmail.com</a></p>
                     <p><FaPhone /> Telefone: <a href="tel:+5516992614410">(16) 99261-4410</a></p>
-                </div>
-                <div>
-                    <p><FaLinkedin /> LinkedIn: <a href="linkedin.com/in/lemuelpires" target="_blank" rel="noopener noreferrer">linkedin.com/in/lemuelpires</a></p>
-                    <p><FaGithub /> GitHub: <a href="https://github.com/lemuelpires" target="_blank" rel="noopener noreferrer">github.com/lemuelpires</a></p>
                     <p><FaWhatsapp /> <a
-                        href="https://wa.me/5516992614410" // Substitua pelo número desejado
+                        href="https://wa.me/5516992614410"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Contate via WhatsApp
                     </a></p>
+                </div>
+                <div>
+                    <p><FaLinkedin /> LinkedIn: <a href="https://linkedin.com/in/lemuelpires" target="_blank" rel="noopener noreferrer">linkedin.com/in/lemuelpires</a></p>
+                    <p><FaGithub /> GitHub: <a href="https://github.com/lemuelpires" target="_blank" rel="noopener noreferrer">github.com/lemuelpires</a></p>
                 </div>
             </div>
         </div>

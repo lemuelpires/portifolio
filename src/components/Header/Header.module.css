@@ -1,6 +1,6 @@
 .header {
 
-    background-color: #384278f2; /* Cor de fundo do header */
+    background-color: #0f1431f2; /* Cor de fundo do header */
     color: #f5f5f5; /* Cor do texto */
     padding: 17px 4em;
     position: relative;
@@ -17,24 +17,58 @@
 .logo h1 {
     margin: 0;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
-    color: #d9d9d9; /* Cor do logo */
+    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.logo h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+.logo:hover h1::after {
+    width: 100%;
 }
 
 .logo img {
     width: 60px;
     height: 60px;
-    border-radius:50px;
-    border: 2px solid #5aa032;
+    border-radius: 50px;
+    border: 2px solid #059669;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4);
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+    border-color: #0891b2;
+    box-shadow: 0 0 20px 5px rgba(5, 150, 105, 0.3);
 }
 
 .logo {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
 }
 
 .headerNav ul {
@@ -46,29 +80,70 @@
 }
 
 .headerNav ul li a {
-    color: #f5f5f5; /* Cor dos links */
+    color: #e2e8f0;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, transparent 0%, transparent 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.headerNav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+    transition: width 0.3s ease;
 }
 
 .headerNav ul li a:hover {
-    color: #66b3ff; /* Cor de destaque no hover */
+    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-2px);
+}
+
+.headerNav ul li a:hover::after {
+    width: 80%;
 }
 
 .menuIcon {
     display: none;
     font-size: 2rem;
-    color: #f5f5f5;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menuIcon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(5, 150, 105, 0.3));
 }
 
 /* Estilos para dispositivos menores */
 @media (max-width: 768px) {
-    .logo h1{
+    .logo h1 {
         font-size: 1em;
     }
+    
+    .logo h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
     .headerContainer {
         flex-direction: row;
         justify-content: space-between;
@@ -80,24 +155,52 @@
         top: 60px;
         right: 0;
         width: 100%;
-        background-color: #222;
+        background: linear-gradient(135deg, rgba(15, 20, 49, 0.95) 0%, rgba(34, 34, 34, 0.95) 100%);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(5, 150, 105, 0.2);
         display: none;
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
     .headerNav.open {
         display: flex;
+        animation: slideDown 0.3s ease-out;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .headerNav ul {
         flex-direction: column;
         gap: 15px;
     }
+    
+    .headerNav ul li a {
+        padding: 12px 20px;
+        display: block;
+        border-radius: 12px;
+    }
+    
+    .headerNav ul li a:hover {
+        background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     .menuIcon {
-        display: block; /* Mostrar ícone de hambúrguer em dispositivos menores */
+        display: block;
         font-size: 1em;
     }
 }

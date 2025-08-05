@@ -1,5 +1,5 @@
 .footer {
-    background-color: #384278f2; /* Cor de fundo do footer */
+    background-color: #0f1431f2; /* Cor de fundo do footer */
     color: #f5f5f5; /* Cor do texto */
     padding: 1.25em 0; /* Padding ajustado para unidades em */
     text-align: center;
@@ -23,30 +23,58 @@
 }
 
 .footerSection h4 {
-    margin-bottom: 0.625em; /* Margem inferior ajustada para unidades em */
-    font-size: 1.125em; /* Reduzido para 1.125em (18px aproximadamente) */
-    font-weight: bold;
-    color: #f4f5f7; /* Cor do título das seções */
+    margin-bottom: 0.625em;
+    font-size: 1.125em;
+    font-weight: 700;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footerSection h4::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+.footerSection:hover h4::after {
+    width: 60px;
 }
 
 .footerSection p,
 .footerSection li {
     display: flex;
     align-items: center;
-    gap: 0.625em; /* Espaço entre o ícone e o texto ajustado para unidades em */
-    margin: 0.3125em 0; /* Margem ajustada para unidades em */
-    font-size: 0.875em; /* Reduzido para 0.875em (14px aproximadamente) */
+    gap: 0.625em;
+    margin: 0.3125em 0;
+    font-size: 0.875em;
+    color: #e2e8f0;
+    transition: color 0.3s ease;
+}
+
+.footerSection p:hover,
+.footerSection li:hover {
+    color: #ffffff;
 }
 
 .footerSection a {
-    color: #ddd; /* Cor padrão dos links */
+    color: #94a3b8;
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .footerSection a:hover {
-    color: #66b3ff; /* Cor ao passar o mouse */
-    text-decoration: underline;
+    color: #ffffff;
 }
 
 .socialLinks {
@@ -60,21 +88,41 @@
 }
 
 .socialLinks a {
-    color: #ddd; /* Cor dos links de redes sociais */
-    font-size: 1em; /* Reduzido para 1em (16px aproximadamente) */
+    color: #94a3b8;
+    font-size: 1em;
     display: flex;
     align-items: center;
-    gap: 0.5em; /* Espaço entre ícone e texto ajustado para unidades em */
+    gap: 0.5em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 4px 0;
+    text-decoration: none;
 }
 
 .socialLinks a:hover {
-    color: #00bcd4; /* Cor ao passar o mouse */
+    color: #ffffff;
 }
 
 /* Estilos para ícones */
 .footerSection svg {
-    color: #f5f5f5; /* Cor dos ícones */
-    font-size: 1em; /* Reduzido para 1em (16px aproximadamente) */
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #0ea5e9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.footerSection:hover svg {
+    transform: scale(1.1);
+}
+
+.socialLinks svg {
+    transition: transform 0.3s ease;
+}
+
+.socialLinks a:hover svg {
+    transform: scale(1.1);
 }
 
 /* Responsividade para dispositivos móveis */
@@ -100,6 +148,12 @@
 
     .footerSection h4 {
         font-size: 1em;
+        text-align: center;
+    }
+    
+    .footerSection h4::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .footerSection p,
@@ -110,6 +164,7 @@
 
     .socialLinks a {
         font-size: 0.875em;
+        justify-content: center;
     }
 
     .footerSection svg {
